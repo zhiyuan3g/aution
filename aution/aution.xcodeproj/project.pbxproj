@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D9EB3321C7B0E9800C37B22 /* BaseMidAndBotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB3231C7B0E9800C37B22 /* BaseMidAndBotView.m */; };
+		7D9EB3331C7B0E9800C37B22 /* BaseTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB3251C7B0E9800C37B22 /* BaseTopBarView.m */; };
+		7D9EB3341C7B0E9800C37B22 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB3271C7B0E9800C37B22 /* BaseViewController.m */; };
+		7D9EB3351C7B0E9800C37B22 /* YCGZDefaultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB3291C7B0E9800C37B22 /* YCGZDefaultView.m */; };
+		7D9EB3361C7B0E9800C37B22 /* YCJGDefaultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB32B1C7B0E9800C37B22 /* YCJGDefaultView.m */; };
+		7D9EB3371C7B0E9800C37B22 /* YCPMDefaultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB32D1C7B0E9800C37B22 /* YCPMDefaultView.m */; };
+		7D9EB3381C7B0E9800C37B22 /* YCPPDefaultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB32F1C7B0E9800C37B22 /* YCPPDefaultView.m */; };
+		7D9EB3391C7B0E9800C37B22 /* YCSYDefaultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB3311C7B0E9800C37B22 /* YCSYDefaultView.m */; };
+		7D9EB33D1C7B0FA200C37B22 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB33C1C7B0FA200C37B22 /* RootViewController.m */; };
 		DC5B5B4F1C7A94CB00495E30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5B5B4E1C7A94CB00495E30 /* main.m */; };
 		DC5B5B521C7A94CB00495E30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5B5B511C7A94CB00495E30 /* AppDelegate.m */; };
 		DC5B5B551C7A94CB00495E30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5B5B541C7A94CB00495E30 /* ViewController.m */; };
@@ -41,6 +50,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D9EB3221C7B0E9800C37B22 /* BaseMidAndBotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMidAndBotView.h; sourceTree = "<group>"; };
+		7D9EB3231C7B0E9800C37B22 /* BaseMidAndBotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMidAndBotView.m; sourceTree = "<group>"; };
+		7D9EB3241C7B0E9800C37B22 /* BaseTopBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTopBarView.h; sourceTree = "<group>"; };
+		7D9EB3251C7B0E9800C37B22 /* BaseTopBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTopBarView.m; sourceTree = "<group>"; };
+		7D9EB3261C7B0E9800C37B22 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		7D9EB3271C7B0E9800C37B22 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		7D9EB3281C7B0E9800C37B22 /* YCGZDefaultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCGZDefaultView.h; sourceTree = "<group>"; };
+		7D9EB3291C7B0E9800C37B22 /* YCGZDefaultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCGZDefaultView.m; sourceTree = "<group>"; };
+		7D9EB32A1C7B0E9800C37B22 /* YCJGDefaultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCJGDefaultView.h; sourceTree = "<group>"; };
+		7D9EB32B1C7B0E9800C37B22 /* YCJGDefaultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCJGDefaultView.m; sourceTree = "<group>"; };
+		7D9EB32C1C7B0E9800C37B22 /* YCPMDefaultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPMDefaultView.h; sourceTree = "<group>"; };
+		7D9EB32D1C7B0E9800C37B22 /* YCPMDefaultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPMDefaultView.m; sourceTree = "<group>"; };
+		7D9EB32E1C7B0E9800C37B22 /* YCPPDefaultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPPDefaultView.h; sourceTree = "<group>"; };
+		7D9EB32F1C7B0E9800C37B22 /* YCPPDefaultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPPDefaultView.m; sourceTree = "<group>"; };
+		7D9EB3301C7B0E9800C37B22 /* YCSYDefaultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSYDefaultView.h; sourceTree = "<group>"; };
+		7D9EB3311C7B0E9800C37B22 /* YCSYDefaultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSYDefaultView.m; sourceTree = "<group>"; };
+		7D9EB33B1C7B0FA200C37B22 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		7D9EB33C1C7B0FA200C37B22 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		DC5B5B4A1C7A94CB00495E30 /* aution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5B5B4E1C7A94CB00495E30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC5B5B501C7A94CB00495E30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +122,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D9EB33A1C7B0E9E00C37B22 /* 主界面 */ = {
+			isa = PBXGroup;
+			children = (
+				7D9EB3221C7B0E9800C37B22 /* BaseMidAndBotView.h */,
+				7D9EB3231C7B0E9800C37B22 /* BaseMidAndBotView.m */,
+				7D9EB3241C7B0E9800C37B22 /* BaseTopBarView.h */,
+				7D9EB3251C7B0E9800C37B22 /* BaseTopBarView.m */,
+				7D9EB3261C7B0E9800C37B22 /* BaseViewController.h */,
+				7D9EB3271C7B0E9800C37B22 /* BaseViewController.m */,
+				7D9EB3281C7B0E9800C37B22 /* YCGZDefaultView.h */,
+				7D9EB3291C7B0E9800C37B22 /* YCGZDefaultView.m */,
+				7D9EB32A1C7B0E9800C37B22 /* YCJGDefaultView.h */,
+				7D9EB32B1C7B0E9800C37B22 /* YCJGDefaultView.m */,
+				7D9EB32C1C7B0E9800C37B22 /* YCPMDefaultView.h */,
+				7D9EB32D1C7B0E9800C37B22 /* YCPMDefaultView.m */,
+				7D9EB32E1C7B0E9800C37B22 /* YCPPDefaultView.h */,
+				7D9EB32F1C7B0E9800C37B22 /* YCPPDefaultView.m */,
+				7D9EB3301C7B0E9800C37B22 /* YCSYDefaultView.h */,
+				7D9EB3311C7B0E9800C37B22 /* YCSYDefaultView.m */,
+			);
+			name = "主界面";
+			sourceTree = "<group>";
+		};
 		DC5B5B411C7A94CA00495E30 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +168,7 @@
 		DC5B5B4C1C7A94CB00495E30 /* aution */ = {
 			isa = PBXGroup;
 			children = (
+				7D9EB33A1C7B0E9E00C37B22 /* 主界面 */,
 				DCAA99E41C7AE283007C50E3 /* 方正正准黑简体.TTF */,
 				DCAA99D11C7AB11D007C50E3 /* model */,
 				DCAA99D01C7AB114007C50E3 /* controller */,
@@ -126,6 +177,8 @@
 				DC5B5B511C7A94CB00495E30 /* AppDelegate.m */,
 				DC5B5B531C7A94CB00495E30 /* ViewController.h */,
 				DC5B5B541C7A94CB00495E30 /* ViewController.m */,
+				7D9EB33B1C7B0FA200C37B22 /* RootViewController.h */,
+				7D9EB33C1C7B0FA200C37B22 /* RootViewController.m */,
 				DC5B5B561C7A94CB00495E30 /* Main.storyboard */,
 				DC5B5B591C7A94CB00495E30 /* Assets.xcassets */,
 				DC5B5B5B1C7A94CB00495E30 /* LaunchScreen.storyboard */,
@@ -328,11 +381,20 @@
 			files = (
 				DC5B5B551C7A94CB00495E30 /* ViewController.m in Sources */,
 				DCAA99D41C7AB142007C50E3 /* YCPMHManager.m in Sources */,
+				7D9EB3341C7B0E9800C37B22 /* BaseViewController.m in Sources */,
+				7D9EB3371C7B0E9800C37B22 /* YCPMDefaultView.m in Sources */,
+				7D9EB3391C7B0E9800C37B22 /* YCSYDefaultView.m in Sources */,
+				7D9EB3381C7B0E9800C37B22 /* YCPPDefaultView.m in Sources */,
 				DC5B5B521C7A94CB00495E30 /* AppDelegate.m in Sources */,
+				7D9EB3331C7B0E9800C37B22 /* BaseTopBarView.m in Sources */,
 				DCAA99E01C7AB234007C50E3 /* YCPMHTableViewCell.m in Sources */,
+				7D9EB3321C7B0E9800C37B22 /* BaseMidAndBotView.m in Sources */,
 				DCAA99DD1C7AB1FF007C50E3 /* YCPMHIndexViewController.m in Sources */,
 				DCAA99DA1C7AB18D007C50E3 /* YCPMJGManager.m in Sources */,
+				7D9EB33D1C7B0FA200C37B22 /* RootViewController.m in Sources */,
+				7D9EB3351C7B0E9800C37B22 /* YCGZDefaultView.m in Sources */,
 				DC5B5B4F1C7A94CB00495E30 /* main.m in Sources */,
+				7D9EB3361C7B0E9800C37B22 /* YCJGDefaultView.m in Sources */,
 				DCAA99D71C7AB173007C50E3 /* YCPPManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
