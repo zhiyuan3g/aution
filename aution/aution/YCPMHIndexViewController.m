@@ -7,8 +7,10 @@
 //
 
 #import "YCPMHIndexViewController.h"
+#import "YCPMHTableViewCell.h"
 
-@interface YCPMHIndexViewController ()
+@interface YCPMHIndexViewController ()<UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -17,6 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.tableView.backgroundColor = [UIColor colorWithRed:1.000 green:0.843 blue:0.815 alpha:1.00];
+    UIImageView * bgIV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"640bg"]];
+    self.tableView.backgroundView = bgIV;
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    // 去掉分割线
+    self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,5 +43,23 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 3;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    YCPMHTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"YCPMHCell" forIndexPath:indexPath];
+    cell.nameLabel.text = @"哈哈哈哈哈哈哈哈";
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 150.0;
+}
 
 @end
