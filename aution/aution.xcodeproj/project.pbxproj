@@ -10,6 +10,11 @@
 		7D9EB30F1C7AE39500C37B22 /* BaseMidAndBotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB30A1C7AE39500C37B22 /* BaseMidAndBotView.m */; };
 		7D9EB3101C7AE39500C37B22 /* BaseTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB30C1C7AE39500C37B22 /* BaseTopBarView.m */; };
 		7D9EB3111C7AE39500C37B22 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB30E1C7AE39500C37B22 /* BaseViewController.m */; };
+		7D9EB3151C7AF7A600C37B22 /* YCSYDefaultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB3141C7AF7A600C37B22 /* YCSYDefaultView.m */; };
+		7D9EB3181C7AF7BB00C37B22 /* YCPMDefaultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB3171C7AF7BB00C37B22 /* YCPMDefaultView.m */; };
+		7D9EB31B1C7AF7CD00C37B22 /* YCPPDefaultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB31A1C7AF7CD00C37B22 /* YCPPDefaultView.m */; };
+		7D9EB31E1C7AF7DD00C37B22 /* YCJGDefaultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB31D1C7AF7DD00C37B22 /* YCJGDefaultView.m */; };
+		7D9EB3211C7AF80100C37B22 /* YCGZDefaultView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB3201C7AF80100C37B22 /* YCGZDefaultView.m */; };
 		DC5B5B4F1C7A94CB00495E30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5B5B4E1C7A94CB00495E30 /* main.m */; };
 		DC5B5B521C7A94CB00495E30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5B5B511C7A94CB00495E30 /* AppDelegate.m */; };
 		DC5B5B551C7A94CB00495E30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5B5B541C7A94CB00495E30 /* ViewController.m */; };
@@ -49,6 +54,16 @@
 		7D9EB30C1C7AE39500C37B22 /* BaseTopBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTopBarView.m; sourceTree = "<group>"; };
 		7D9EB30D1C7AE39500C37B22 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		7D9EB30E1C7AE39500C37B22 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		7D9EB3131C7AF7A600C37B22 /* YCSYDefaultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCSYDefaultView.h; sourceTree = "<group>"; };
+		7D9EB3141C7AF7A600C37B22 /* YCSYDefaultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCSYDefaultView.m; sourceTree = "<group>"; };
+		7D9EB3161C7AF7BB00C37B22 /* YCPMDefaultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPMDefaultView.h; sourceTree = "<group>"; };
+		7D9EB3171C7AF7BB00C37B22 /* YCPMDefaultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPMDefaultView.m; sourceTree = "<group>"; };
+		7D9EB3191C7AF7CD00C37B22 /* YCPPDefaultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPPDefaultView.h; sourceTree = "<group>"; };
+		7D9EB31A1C7AF7CD00C37B22 /* YCPPDefaultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPPDefaultView.m; sourceTree = "<group>"; };
+		7D9EB31C1C7AF7DD00C37B22 /* YCJGDefaultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCJGDefaultView.h; sourceTree = "<group>"; };
+		7D9EB31D1C7AF7DD00C37B22 /* YCJGDefaultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCJGDefaultView.m; sourceTree = "<group>"; };
+		7D9EB31F1C7AF80100C37B22 /* YCGZDefaultView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCGZDefaultView.h; sourceTree = "<group>"; };
+		7D9EB3201C7AF80100C37B22 /* YCGZDefaultView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCGZDefaultView.m; sourceTree = "<group>"; };
 		DC5B5B4A1C7A94CB00495E30 /* aution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5B5B4E1C7A94CB00495E30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC5B5B501C7A94CB00495E30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +126,16 @@
 				7D9EB30C1C7AE39500C37B22 /* BaseTopBarView.m */,
 				7D9EB30D1C7AE39500C37B22 /* BaseViewController.h */,
 				7D9EB30E1C7AE39500C37B22 /* BaseViewController.m */,
+				7D9EB3131C7AF7A600C37B22 /* YCSYDefaultView.h */,
+				7D9EB3141C7AF7A600C37B22 /* YCSYDefaultView.m */,
+				7D9EB3161C7AF7BB00C37B22 /* YCPMDefaultView.h */,
+				7D9EB3171C7AF7BB00C37B22 /* YCPMDefaultView.m */,
+				7D9EB3191C7AF7CD00C37B22 /* YCPPDefaultView.h */,
+				7D9EB31A1C7AF7CD00C37B22 /* YCPPDefaultView.m */,
+				7D9EB31C1C7AF7DD00C37B22 /* YCJGDefaultView.h */,
+				7D9EB31D1C7AF7DD00C37B22 /* YCJGDefaultView.m */,
+				7D9EB31F1C7AF80100C37B22 /* YCGZDefaultView.h */,
+				7D9EB3201C7AF80100C37B22 /* YCGZDefaultView.m */,
 			);
 			name = "界面";
 			sourceTree = "<group>";
@@ -349,10 +374,15 @@
 				DCAA99D41C7AB142007C50E3 /* YCPMHManager.m in Sources */,
 				7D9EB3111C7AE39500C37B22 /* BaseViewController.m in Sources */,
 				DC5B5B521C7A94CB00495E30 /* AppDelegate.m in Sources */,
+				7D9EB3151C7AF7A600C37B22 /* YCSYDefaultView.m in Sources */,
+				7D9EB3181C7AF7BB00C37B22 /* YCPMDefaultView.m in Sources */,
 				7D9EB3101C7AE39500C37B22 /* BaseTopBarView.m in Sources */,
+				7D9EB31E1C7AF7DD00C37B22 /* YCJGDefaultView.m in Sources */,
 				DCAA99E01C7AB234007C50E3 /* YCPMHTableViewCell.m in Sources */,
+				7D9EB3211C7AF80100C37B22 /* YCGZDefaultView.m in Sources */,
 				7D9EB30F1C7AE39500C37B22 /* BaseMidAndBotView.m in Sources */,
 				DCAA99DD1C7AB1FF007C50E3 /* YCPMHIndexViewController.m in Sources */,
+				7D9EB31B1C7AF7CD00C37B22 /* YCPPDefaultView.m in Sources */,
 				DCAA99DA1C7AB18D007C50E3 /* YCPMJGManager.m in Sources */,
 				DC5B5B4F1C7A94CB00495E30 /* main.m in Sources */,
 				DCAA99D71C7AB173007C50E3 /* YCPPManager.m in Sources */,

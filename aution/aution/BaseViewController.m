@@ -26,14 +26,14 @@
     // 自定义导航栏
     self.topBarView = [[BaseTopBarView alloc]initWithFrame:CGRectMake(0, 20, CGRectGetWidth(self.view.frame), 46)];
     self.topBarView.backgroundColor = [UIColor whiteColor];
+    [self.topBarView.titleLable setText:@"雅昌拍卖图录"];
     [self.view addSubview:self.topBarView];
     
     // 其他视图
-    
     BaseMidAndBotView * mView = [[BaseMidAndBotView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.topBarView.frame), CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)-CGRectGetMaxY(self.topBarView.frame))];
+    mView.topBarView = self.topBarView;
     [self.view addSubview:mView];
-    
-    
+
 }
 
 - (void)didReceiveMemoryWarning {

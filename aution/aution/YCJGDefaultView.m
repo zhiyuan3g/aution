@@ -9,7 +9,14 @@
 #import "YCJGDefaultView.h"
 
 @implementation YCJGDefaultView
-
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.backgroundColor = [UIColor yellowColor];
+    }
+    return self;
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

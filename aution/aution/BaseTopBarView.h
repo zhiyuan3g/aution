@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface BaseTopBarView : UIView
+// 背景图片
+@property(nonatomic, strong)UIImageView * backImageView;
+
+/// 导航栏Title
+@property(nonatomic, strong)UILabel * titleLable;
 
 @end

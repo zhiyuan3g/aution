@@ -7,6 +7,8 @@
 //
 
 #import "BaseMidAndBotView.h"
+#import "BaseTopBarView.h"
+
 #define COUNT 5 //底部导航个数
 @class BaseViewController;
 @implementation BaseMidAndBotView
@@ -15,12 +17,21 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        for (int i = 0; i < 5; i++) {
-            UIView * midView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame)-44)];
-            midView.tag = i;
-            [self addSubview:midView];
-        }
-        _currentView = (UIView *)[self viewWithTag:0];
+
+        CGRect rect = CGRectMake(0, 0, CGRectGetWidth(self.frame), CGRectGetHeight(self.frame)-44);
+        /// 界面布局
+        self.syDefaultView = [[YCSYDefaultView alloc]initWithFrame:rect];
+        [self addSubview:self.syDefaultView];
+        _currentView = self.syDefaultView;
+        
+        self.pmDefaultView = [[YCPMDefaultView alloc]initWithFrame:rect];
+        
+        self.ppDefaultView = [[YCPPDefaultView alloc]initWithFrame:rect];
+        
+        self.jgDefaultView = [[YCJGDefaultView alloc]initWithFrame:rect];
+        
+        self.gzDefaultView = [[YCGZDefaultView alloc]initWithFrame:rect];
+        
 
         /// 自定义底部导航栏
         self.tabBarBG = [[UIImageView alloc]initWithFrame:CGRectMake(0, CGRectGetHeight(self.frame)-44, CGRectGetWidth(self.frame), 44)];
@@ -42,7 +53,7 @@
             [tabBtn setTitle:[picSelectedArr objectAtIndex:i] forState:UIControlStateSelected];
             [tabBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             // tag 值
-            [tabBtn setTag:i+100];
+            [tabBtn setTag:i+101];
             [tabBtn addTarget:self action:@selector(tabBtnAction:) forControlEvents:UIControlEventTouchUpInside];
             [self.tabBarBG addSubview:tabBtn];
         }
@@ -52,53 +63,63 @@
 }
 
 - (void)tabBtnAction:(UIButton *)btn {
-    [btn setSelected:![btn isSelected]];
-    switch (btn.tag) {
-        case 100:
-        {
-            [(UIButton *)[self viewWithTag:101]setSelected:NO];
-            [(UIButton *)[self viewWithTag:102]setSelected:NO];
-            [(UIButton *)[self viewWithTag:103]setSelected:NO];
-            [(UIButton *)[self viewWithTag:104]setSelected:NO];
-        }
-            break;
-        case 101:
-        {
-            [(UIButton *)[self viewWithTag:100]setSelected:NO];
-            [(UIButton *)[self viewWithTag:102]setSelected:NO];
-            [(UIButton *)[self viewWithTag:103]setSelected:NO];
-            [(UIButton *)[self viewWithTag:104]setSelected:NO];
-        }
-            break;
-        case 102:
-        {
-            [(UIButton *)[self viewWithTag:100]setSelected:NO];
-            [(UIButton *)[self viewWithTag:101]setSelected:NO];
-            [(UIButton *)[self viewWithTag:103]setSelected:NO];
-            [(UIButton *)[self viewWithTag:104]setSelected:NO];
-        }
-            break;
-        case 103:
-        {
-            [(UIButton *)[self viewWithTag:101]setSelected:NO];
-            [(UIButton *)[self viewWithTag:102]setSelected:NO];
-            [(UIButton *)[self viewWithTag:100]setSelected:NO];
-            [(UIButton *)[self viewWithTag:104]setSelected:NO];
-        }
-            break;
-        case 104:
-        {
-            [(UIButton *)[self viewWithTag:101]setSelected:NO];
-            [(UIButton *)[self viewWithTag:102]setSelected:NO];
-            [(UIButton *)[self viewWithTag:103]setSelected:NO];
-            [(UIButton *)[self viewWithTag:100]setSelected:NO];
-        }
-            break;
-        default:
-            break;
+//    [btn setSelected:![btn isSelected]];
+    [self lastSelectedTabWithButton:btn];
+    
+    if (101 == btn.tag) {
+        [btn setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+        [_currentView removeFromSuperview];
+        [self addSubview:self.syDefaultView];
+        _currentView = self.syDefaultView;
+       [self.topBarView.titleLable setText:@"雅昌拍卖图录"];
+    }else if (102 == btn.tag) {
+        [btn setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+        [_currentView removeFromSuperview];
+        [self addSubview:self.pmDefaultView];
+        _currentView = self.pmDefaultView;
+        [self.topBarView.titleLable setText:@"拍卖会"];
+    }else if (103 == btn.tag) {
+        [btn setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+        [_currentView removeFromSuperview];
+        [self addSubview:self.ppDefaultView];
+        _currentView = self.ppDefaultView;
+        [self.topBarView.titleLable setText:@"拍品"];
+    }else if (104 == btn.tag) {
+        [btn setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+        [_currentView removeFromSuperview];
+        [self addSubview:self.jgDefaultView];
+        _currentView = self.jgDefaultView;
+        [self.topBarView.titleLable setText:@"拍卖机构"];
+    }else if (105 == btn.tag) {
+        [btn setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+        [_currentView removeFromSuperview];
+        [self addSubview:self.gzDefaultView];
+        _currentView = self.gzDefaultView;
+        [self.topBarView.titleLable setText:@"个人中心"];
     }
+    _currentTab = btn;
 }
 
+- (void)lastSelectedTabWithButton:(UIButton *)btn {
+    
+    // 使上次选中的按钮背景图片恢复未被选中时
+    if (101 == _currentTab.tag) {
+        [_currentTab setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    }
+    else if (102 == _currentTab.tag) {
+        [_currentTab setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    }
+    else if (103 == _currentTab.tag) {
+        [_currentTab setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    }
+    else if (104 == _currentTab.tag) {
+        [_currentTab setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    }
+    else if (105 == _currentTab.tag) {
+        [_currentTab setImage:[UIImage imageNamed:@".png"] forState:UIControlStateNormal];
+    }
+
+}
 
 
 @end
