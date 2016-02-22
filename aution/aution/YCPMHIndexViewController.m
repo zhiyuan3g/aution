@@ -27,6 +27,31 @@
     self.tableView.delegate = self;
     // 去掉分割线
     self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
+    
+    
+    //---
+    
+    NSArray *familyNames =[[NSArray alloc]initWithArray:[UIFont familyNames]];
+    NSArray *fontNames;
+    NSInteger indFamily, indFont;
+    NSLog(@"[familyNames count]===%lu",[familyNames count]);
+    for(indFamily=0;indFamily<[familyNames count];++indFamily)
+        
+    {
+        NSLog(@"Family name: %@", [familyNames objectAtIndex:indFamily]);
+        fontNames =[[NSArray alloc]initWithArray:[UIFont fontNamesForFamilyName:[familyNames objectAtIndex:indFamily]]];
+        
+        for(indFont=0; indFont<[fontNames count]; ++indFont)
+            
+        {
+            NSLog(@"Font name: %@",[fontNames objectAtIndex:indFont]);
+            
+        }
+        
+
+    }
+    
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,7 +77,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     YCPMHTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"YCPMHCell" forIndexPath:indexPath];
-    cell.nameLabel.text = @"哈哈哈哈哈哈哈哈";
+    cell.nameLabel.text = @"香港秋季拍卖会";
     return cell;
 }
 

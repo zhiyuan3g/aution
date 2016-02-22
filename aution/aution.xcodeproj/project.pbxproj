@@ -67,7 +67,7 @@
 		DCAA99DC1C7AB1FF007C50E3 /* YCPMHIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPMHIndexViewController.m; sourceTree = "<group>"; };
 		DCAA99DE1C7AB234007C50E3 /* YCPMHTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPMHTableViewCell.h; sourceTree = "<group>"; };
 		DCAA99DF1C7AB234007C50E3 /* YCPMHTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPMHTableViewCell.m; sourceTree = "<group>"; };
-		DCAA99E41C7AE283007C50E3 /* 方正正准黑简体.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "方正正准黑简体.TTF"; sourceTree = "<group>"; };
+		DCAA99E41C7AE283007C50E3 /* 方正正准黑简体.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "方正正准黑简体.TTF"; path = "../方正正准黑简体.TTF"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,6 @@
 		DC5B5B411C7A94CA00495E30 = {
 			isa = PBXGroup;
 			children = (
-				DCAA99E41C7AE283007C50E3 /* 方正正准黑简体.TTF */,
 				DC5B5B4C1C7A94CB00495E30 /* aution */,
 				DC5B5B661C7A94CB00495E30 /* autionTests */,
 				DC5B5B711C7A94CB00495E30 /* autionUITests */,
@@ -119,6 +118,7 @@
 		DC5B5B4C1C7A94CB00495E30 /* aution */ = {
 			isa = PBXGroup;
 			children = (
+				DCAA99E41C7AE283007C50E3 /* 方正正准黑简体.TTF */,
 				DCAA99D11C7AB11D007C50E3 /* model */,
 				DCAA99D01C7AB114007C50E3 /* controller */,
 				DCAA99CF1C7AB105007C50E3 /* view */,

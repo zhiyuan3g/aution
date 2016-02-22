@@ -26,6 +26,9 @@
     maskLayer2.path = maskPath2.CGPath;
     self.stateLabel.layer.mask = maskLayer2;
     
+    // 方正正准黑简体
+    self.nameLabel.font = [UIFont fontWithName:@"FZZZHUNHJW--GB1-0" size:17.0];
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
