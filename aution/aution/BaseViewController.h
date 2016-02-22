@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class BaseTopBarView;
 
 @interface BaseViewController : UIViewController
+/// 自定义导航栏
+@property(nonatomic, strong)BaseTopBarView * topBarView;
 
 @end

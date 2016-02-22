@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D9EB30F1C7AE39500C37B22 /* BaseMidAndBotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB30A1C7AE39500C37B22 /* BaseMidAndBotView.m */; };
+		7D9EB3101C7AE39500C37B22 /* BaseTopBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB30C1C7AE39500C37B22 /* BaseTopBarView.m */; };
+		7D9EB3111C7AE39500C37B22 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9EB30E1C7AE39500C37B22 /* BaseViewController.m */; };
 		DC5B5B4F1C7A94CB00495E30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5B5B4E1C7A94CB00495E30 /* main.m */; };
 		DC5B5B521C7A94CB00495E30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5B5B511C7A94CB00495E30 /* AppDelegate.m */; };
 		DC5B5B551C7A94CB00495E30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5B5B541C7A94CB00495E30 /* ViewController.m */; };
@@ -40,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D9EB3091C7AE39500C37B22 /* BaseMidAndBotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMidAndBotView.h; sourceTree = "<group>"; };
+		7D9EB30A1C7AE39500C37B22 /* BaseMidAndBotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMidAndBotView.m; sourceTree = "<group>"; };
+		7D9EB30B1C7AE39500C37B22 /* BaseTopBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTopBarView.h; sourceTree = "<group>"; };
+		7D9EB30C1C7AE39500C37B22 /* BaseTopBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTopBarView.m; sourceTree = "<group>"; };
+		7D9EB30D1C7AE39500C37B22 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		7D9EB30E1C7AE39500C37B22 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		DC5B5B4A1C7A94CB00495E30 /* aution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5B5B4E1C7A94CB00495E30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC5B5B501C7A94CB00495E30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +102,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D9EB3121C7AE3D200C37B22 /* 界面 */ = {
+			isa = PBXGroup;
+			children = (
+				7D9EB3091C7AE39500C37B22 /* BaseMidAndBotView.h */,
+				7D9EB30A1C7AE39500C37B22 /* BaseMidAndBotView.m */,
+				7D9EB30B1C7AE39500C37B22 /* BaseTopBarView.h */,
+				7D9EB30C1C7AE39500C37B22 /* BaseTopBarView.m */,
+				7D9EB30D1C7AE39500C37B22 /* BaseViewController.h */,
+				7D9EB30E1C7AE39500C37B22 /* BaseViewController.m */,
+			);
+			name = "界面";
+			sourceTree = "<group>";
+		};
 		DC5B5B411C7A94CA00495E30 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +138,7 @@
 		DC5B5B4C1C7A94CB00495E30 /* aution */ = {
 			isa = PBXGroup;
 			children = (
+				7D9EB3121C7AE3D200C37B22 /* 界面 */,
 				DCAA99D11C7AB11D007C50E3 /* model */,
 				DCAA99D01C7AB114007C50E3 /* controller */,
 				DCAA99CF1C7AB105007C50E3 /* view */,
@@ -324,8 +347,11 @@
 			files = (
 				DC5B5B551C7A94CB00495E30 /* ViewController.m in Sources */,
 				DCAA99D41C7AB142007C50E3 /* YCPMHManager.m in Sources */,
+				7D9EB3111C7AE39500C37B22 /* BaseViewController.m in Sources */,
 				DC5B5B521C7A94CB00495E30 /* AppDelegate.m in Sources */,
+				7D9EB3101C7AE39500C37B22 /* BaseTopBarView.m in Sources */,
 				DCAA99E01C7AB234007C50E3 /* YCPMHTableViewCell.m in Sources */,
+				7D9EB30F1C7AE39500C37B22 /* BaseMidAndBotView.m in Sources */,
 				DCAA99DD1C7AB1FF007C50E3 /* YCPMHIndexViewController.m in Sources */,
 				DCAA99DA1C7AB18D007C50E3 /* YCPMJGManager.m in Sources */,
 				DC5B5B4F1C7A94CB00495E30 /* main.m in Sources */,

@@ -7,6 +7,8 @@
 //
 
 #import "BaseViewController.h"
+#import "BaseTopBarView.h"
+#import "BaseMidAndBotView.h"
 
 @interface BaseViewController ()
 
@@ -16,7 +18,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // 背景颜色
+    self.view.backgroundColor = [UIColor lightGrayColor];
+    // 隐藏导航栏
+    self.navigationController.navigationBarHidden = YES;
+    
+    // 自定义导航栏
+    self.topBarView = [[BaseTopBarView alloc]initWithFrame:CGRectMake(0, 20, CGRectGetWidth(self.view.frame), 46)];
+    self.topBarView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.topBarView];
+    
+    // 其他视图
+    
+    BaseMidAndBotView * mView = [[BaseMidAndBotView alloc]initWithFrame:CGRectMake(0, CGRectGetMaxY(self.topBarView.frame), CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)-CGRectGetMaxY(self.topBarView.frame))];
+    [self.view addSubview:mView];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
