@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+// 拍卖会自定义Cell
 @interface YCPMHTableViewCell : UITableViewCell
 
 @end

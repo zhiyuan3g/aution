@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+// 拍卖机构Manager
 @interface YCPMJGManager : NSObject
 
 @end

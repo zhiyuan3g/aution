@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+// 拍品Manager
 @interface YCPPManager : NSObject
 
 @end

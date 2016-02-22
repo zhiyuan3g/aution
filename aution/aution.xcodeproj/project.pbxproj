@@ -15,6 +15,11 @@
 		DC5B5B5D1C7A94CB00495E30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5B5B5B1C7A94CB00495E30 /* LaunchScreen.storyboard */; };
 		DC5B5B681C7A94CB00495E30 /* autionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5B5B671C7A94CB00495E30 /* autionTests.m */; };
 		DC5B5B731C7A94CB00495E30 /* autionUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC5B5B721C7A94CB00495E30 /* autionUITests.m */; };
+		DCAA99D41C7AB142007C50E3 /* YCPMHManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA99D31C7AB142007C50E3 /* YCPMHManager.m */; };
+		DCAA99D71C7AB173007C50E3 /* YCPPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA99D61C7AB173007C50E3 /* YCPPManager.m */; };
+		DCAA99DA1C7AB18D007C50E3 /* YCPMJGManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA99D91C7AB18D007C50E3 /* YCPMJGManager.m */; };
+		DCAA99DD1C7AB1FF007C50E3 /* YCPMHIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA99DC1C7AB1FF007C50E3 /* YCPMHIndexViewController.m */; };
+		DCAA99E01C7AB234007C50E3 /* YCPMHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA99DF1C7AB234007C50E3 /* YCPMHTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		DC5B5B6E1C7A94CB00495E30 /* autionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = autionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5B5B721C7A94CB00495E30 /* autionUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = autionUITests.m; sourceTree = "<group>"; };
 		DC5B5B741C7A94CB00495E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCAA99D21C7AB142007C50E3 /* YCPMHManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPMHManager.h; sourceTree = "<group>"; };
+		DCAA99D31C7AB142007C50E3 /* YCPMHManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPMHManager.m; sourceTree = "<group>"; };
+		DCAA99D51C7AB173007C50E3 /* YCPPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPPManager.h; sourceTree = "<group>"; };
+		DCAA99D61C7AB173007C50E3 /* YCPPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPPManager.m; sourceTree = "<group>"; };
+		DCAA99D81C7AB18D007C50E3 /* YCPMJGManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPMJGManager.h; sourceTree = "<group>"; };
+		DCAA99D91C7AB18D007C50E3 /* YCPMJGManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPMJGManager.m; sourceTree = "<group>"; };
+		DCAA99DB1C7AB1FF007C50E3 /* YCPMHIndexViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPMHIndexViewController.h; sourceTree = "<group>"; };
+		DCAA99DC1C7AB1FF007C50E3 /* YCPMHIndexViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPMHIndexViewController.m; sourceTree = "<group>"; };
+		DCAA99DE1C7AB234007C50E3 /* YCPMHTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPMHTableViewCell.h; sourceTree = "<group>"; };
+		DCAA99DF1C7AB234007C50E3 /* YCPMHTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPMHTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,9 @@
 		DC5B5B4C1C7A94CB00495E30 /* aution */ = {
 			isa = PBXGroup;
 			children = (
+				DCAA99D11C7AB11D007C50E3 /* model */,
+				DCAA99D01C7AB114007C50E3 /* controller */,
+				DCAA99CF1C7AB105007C50E3 /* view */,
 				DC5B5B501C7A94CB00495E30 /* AppDelegate.h */,
 				DC5B5B511C7A94CB00495E30 /* AppDelegate.m */,
 				DC5B5B531C7A94CB00495E30 /* ViewController.h */,
@@ -138,6 +156,37 @@
 				DC5B5B741C7A94CB00495E30 /* Info.plist */,
 			);
 			path = autionUITests;
+			sourceTree = "<group>";
+		};
+		DCAA99CF1C7AB105007C50E3 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA99DE1C7AB234007C50E3 /* YCPMHTableViewCell.h */,
+				DCAA99DF1C7AB234007C50E3 /* YCPMHTableViewCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		DCAA99D01C7AB114007C50E3 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA99DB1C7AB1FF007C50E3 /* YCPMHIndexViewController.h */,
+				DCAA99DC1C7AB1FF007C50E3 /* YCPMHIndexViewController.m */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		DCAA99D11C7AB11D007C50E3 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DCAA99D21C7AB142007C50E3 /* YCPMHManager.h */,
+				DCAA99D31C7AB142007C50E3 /* YCPMHManager.m */,
+				DCAA99D51C7AB173007C50E3 /* YCPPManager.h */,
+				DCAA99D61C7AB173007C50E3 /* YCPPManager.m */,
+				DCAA99D81C7AB18D007C50E3 /* YCPMJGManager.h */,
+				DCAA99D91C7AB18D007C50E3 /* YCPMJGManager.m */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,8 +323,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC5B5B551C7A94CB00495E30 /* ViewController.m in Sources */,
+				DCAA99D41C7AB142007C50E3 /* YCPMHManager.m in Sources */,
 				DC5B5B521C7A94CB00495E30 /* AppDelegate.m in Sources */,
+				DCAA99E01C7AB234007C50E3 /* YCPMHTableViewCell.m in Sources */,
+				DCAA99DD1C7AB1FF007C50E3 /* YCPMHIndexViewController.m in Sources */,
+				DCAA99DA1C7AB18D007C50E3 /* YCPMJGManager.m in Sources */,
 				DC5B5B4F1C7A94CB00495E30 /* main.m in Sources */,
+				DCAA99D71C7AB173007C50E3 /* YCPPManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +553,7 @@
 				DC5B5B791C7A94CB00495E30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC5B5B7A1C7A94CB00495E30 /* Build configuration list for PBXNativeTarget "autionTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +562,7 @@
 				DC5B5B7C1C7A94CB00495E30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC5B5B7D1C7A94CB00495E30 /* Build configuration list for PBXNativeTarget "autionUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +571,7 @@
 				DC5B5B7F1C7A94CB00495E30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
