@@ -10,7 +10,8 @@
 
 // 拍卖会自定义Cell
 @interface YCPMHTableViewCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UILabel *stateLabel; //状态（待预展，预展中，已结束）
+@property (assign,nonatomic)int state; //状态（1待预展，2预展中，3已结束） 只需要设置这个状态就可以
+
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel; //名称
 @property (weak, nonatomic) IBOutlet UIButton *companyBtn; // 公司名称
 @property (weak, nonatomic) IBOutlet UIButton *dateBtn; // 日期时间
