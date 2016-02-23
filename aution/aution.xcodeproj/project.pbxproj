@@ -21,6 +21,8 @@
 		DCAA99DD1C7AB1FF007C50E3 /* YCPMHIndexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA99DC1C7AB1FF007C50E3 /* YCPMHIndexViewController.m */; };
 		DCAA99E01C7AB234007C50E3 /* YCPMHTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA99DF1C7AB234007C50E3 /* YCPMHTableViewCell.m */; };
 		DCAA99E51C7AE283007C50E3 /* 方正正准黑简体.TTF in Resources */ = {isa = PBXBuildFile; fileRef = DCAA99E41C7AE283007C50E3 /* 方正正准黑简体.TTF */; };
+		DCAA99E81C7AFC79007C50E3 /* YCPMZCListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA99E71C7AFC79007C50E3 /* YCPMZCListViewController.m */; };
+		DCAA99EB1C7B06DE007C50E3 /* YCPMZCHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAA99EA1C7B06DE007C50E3 /* YCPMZCHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,10 @@
 		DCAA99DE1C7AB234007C50E3 /* YCPMHTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPMHTableViewCell.h; sourceTree = "<group>"; };
 		DCAA99DF1C7AB234007C50E3 /* YCPMHTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPMHTableViewCell.m; sourceTree = "<group>"; };
 		DCAA99E41C7AE283007C50E3 /* 方正正准黑简体.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; name = "方正正准黑简体.TTF"; path = "../方正正准黑简体.TTF"; sourceTree = "<group>"; };
+		DCAA99E61C7AFC79007C50E3 /* YCPMZCListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPMZCListViewController.h; sourceTree = "<group>"; };
+		DCAA99E71C7AFC79007C50E3 /* YCPMZCListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPMZCListViewController.m; sourceTree = "<group>"; };
+		DCAA99E91C7B06DE007C50E3 /* YCPMZCHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCPMZCHeaderView.h; sourceTree = "<group>"; };
+		DCAA99EA1C7B06DE007C50E3 /* YCPMZCHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YCPMZCHeaderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,8 @@
 			children = (
 				DCAA99DE1C7AB234007C50E3 /* YCPMHTableViewCell.h */,
 				DCAA99DF1C7AB234007C50E3 /* YCPMHTableViewCell.m */,
+				DCAA99E91C7B06DE007C50E3 /* YCPMZCHeaderView.h */,
+				DCAA99EA1C7B06DE007C50E3 /* YCPMZCHeaderView.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -175,6 +183,8 @@
 			children = (
 				DCAA99DB1C7AB1FF007C50E3 /* YCPMHIndexViewController.h */,
 				DCAA99DC1C7AB1FF007C50E3 /* YCPMHIndexViewController.m */,
+				DCAA99E61C7AFC79007C50E3 /* YCPMZCListViewController.h */,
+				DCAA99E71C7AFC79007C50E3 /* YCPMZCListViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -329,7 +339,9 @@
 				DC5B5B551C7A94CB00495E30 /* ViewController.m in Sources */,
 				DCAA99D41C7AB142007C50E3 /* YCPMHManager.m in Sources */,
 				DC5B5B521C7A94CB00495E30 /* AppDelegate.m in Sources */,
+				DCAA99E81C7AFC79007C50E3 /* YCPMZCListViewController.m in Sources */,
 				DCAA99E01C7AB234007C50E3 /* YCPMHTableViewCell.m in Sources */,
+				DCAA99EB1C7B06DE007C50E3 /* YCPMZCHeaderView.m in Sources */,
 				DCAA99DD1C7AB1FF007C50E3 /* YCPMHIndexViewController.m in Sources */,
 				DCAA99DA1C7AB18D007C50E3 /* YCPMJGManager.m in Sources */,
 				DC5B5B4F1C7A94CB00495E30 /* main.m in Sources */,
