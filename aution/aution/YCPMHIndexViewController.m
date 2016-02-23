@@ -20,37 +20,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // 表格背景颜色
     self.tableView.backgroundColor = [UIColor colorWithRed:1.000 green:0.843 blue:0.815 alpha:1.00];
+    // 表格背景图片
     UIImageView * bgIV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"640bg"]];
     self.tableView.backgroundView = bgIV;
+    
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     // 去掉分割线
     self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
-    
-    
-    //---
-    
-    NSArray *familyNames =[[NSArray alloc]initWithArray:[UIFont familyNames]];
-    NSArray *fontNames;
-    NSInteger indFamily, indFont;
-    NSLog(@"[familyNames count]===%lu",[familyNames count]);
-    for(indFamily=0;indFamily<[familyNames count];++indFamily)
-        
-    {
-        NSLog(@"Family name: %@", [familyNames objectAtIndex:indFamily]);
-        fontNames =[[NSArray alloc]initWithArray:[UIFont fontNamesForFamilyName:[familyNames objectAtIndex:indFamily]]];
-        
-        for(indFont=0; indFont<[fontNames count]; ++indFont)
-            
-        {
-            NSLog(@"Font name: %@",[fontNames objectAtIndex:indFont]);
-            
-        }
-        
-
-    }
-    
 
 }
 
@@ -72,7 +51,7 @@
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return 5;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -85,6 +64,12 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 150.0;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIStoryboard * sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    UIViewController * vc = [sb instantiateViewControllerWithIdentifier:@"pmzcListVC"];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 @end
